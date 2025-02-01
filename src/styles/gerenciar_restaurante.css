@@ -1,0 +1,73 @@
+
+:root {
+    --cor1: #C49A6C;
+    --cor2: #7D1424;
+    --cor3: #F5E1C0;
+    --cor4: #2E2E2E;
+    --cor5: #204E39;
+}
+
+main {
+    display: flex;
+    background-color: var(--cor1);
+    gap: 2rem;
+}
+
+.header {
+    background-color: var(--cor3);
+    width: 15%;
+    height: 100vh;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: white;
+}
+
+.header_top {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--cor2);
+    color: white;
+}
+
+#navbar_router a {
+    text-decoration: none;
+    padding: 10px;
+    color: #204E39;
+    font-size: 1.2rem;
+}
+#navbar_router {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+aside {
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+}
+#child_card:nth-child(2)  h1 {
+    font-size: 2rem;
+}
+#child_card {
+    color: var(--cor5);
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.411);
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}

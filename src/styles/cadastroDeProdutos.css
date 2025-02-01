@@ -1,0 +1,58 @@
+:root {
+    --cor1: #C49A6C;
+    --cor2: #7D1424;
+    --cor3: #F5E1C0;
+    --cor4: #2E2E2E;
+    --cor5: #204E39;
+}
+
+
+.cadastroDeProdutos_aside {
+    width: 100%;
+    color: white;
+}
+
+form {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+input[type="text"], input[type="number"] {
+    width: 80%;
+    height: 50px;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+input[type="date"] {
+    width: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.title_cadastro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_cadastro button {
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: var(--cor5);
+    font-weight: bold;
+    transition: .5s;
+}
+
+.title_cadastro button:hover {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="../../styles/gerenciar_restaurante.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/cadastroDeProdutos.css">
+
+</head>
+
+<body>
+    <main>
+        <section class="header">
+            <div class="header_top">
+                <h1>Sexta Sinfonia</h1>
+            </div>
+            <div id="navbar_router"></div>
+        </section>
+        <aside class="cadastroDeProdutos_aside">
+          <div class="title_cadastro">
+            <h1>Cadastro de Produto</h1>
+            <button id="btn">Cadastrar Produto</button>
+          </div>
+            <form action="/submit-product" method="post">
+                <div>
+                    <input type="text" id="nomeProduto" name="nomeProduto" required placeholder="Nome Do Produto">
+                </div>
+                <div>
+                    <input type="number" id="quantidade" name="quantidade" required placeholder="Quatidade">
+                </div>
+                <div>
+                    <input type="number" id="precoVenda" name="precoVenda" step="0.01" required
+                        placeholder="Preço de Venda">
+                </div>
+                <div>
+                    <input type="date" id="dataExpiracao" name="dataExpiracao" required placeholder="Data de validade">
+                </div>
+                <div>
+                </div>
+            </form>
+        </aside>
+    </main>
+    <script  src="../../router/router.js"></script>
+    <scrip  type="module"  src="../../script/js/cadastroDeProdutos.js"></scrip>
+</body>
+
+</html>
