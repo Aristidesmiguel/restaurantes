@@ -1,5 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+/* import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"; */
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAJCJmXXWepkZQt8ezYemD8tnziBC3mzwI",
@@ -11,6 +12,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+/* const auth = getAuth(app); */
 const db = getFirestore(app);
 
 export default db
